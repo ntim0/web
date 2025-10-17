@@ -21,12 +21,28 @@ export default function Home() {
         <p className="text-gray-300 text-base sm:text-lg md:text-xl mb-8 sm:mb-10 leading-relaxed max-w-lg mx-auto">
           Learn about me, my goals and future plans. Use my AI assistant for quick navigation.
         </p>
-        <Link
-          to="/goals"
-          className="inline-block px-6 py-3 sm:px-8 sm:py-4 bg-cyan-400 text-gray-900 font-bold rounded-full shadow-lg hover:bg-cyan-300 transition"
-        >
-          Explore My Goals
-        </Link>
+
+        {/* Button group */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            to="/goals"
+            className="inline-block px-6 py-3 sm:px-8 sm:py-4 bg-cyan-400 text-gray-900 font-bold rounded-full shadow-lg hover:bg-cyan-300 transition"
+          >
+            Explore My Goals
+          </Link>
+          <Link
+            to="/about"
+            className="inline-block px-6 py-3 sm:px-8 sm:py-4 bg-cyan-400 text-gray-900 font-bold rounded-full shadow-lg hover:bg-cyan-300 transition"
+          >
+            About Me
+          </Link>
+          <Link
+            to="/contact"
+            className="inline-block px-6 py-3 sm:px-8 sm:py-4 bg-cyan-400 text-gray-900 font-bold rounded-full shadow-lg hover:bg-cyan-300 transition"
+          >
+            Contact
+          </Link>
+        </div>
       </div>
     </section>
   );
